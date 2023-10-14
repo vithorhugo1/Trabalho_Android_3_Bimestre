@@ -1,0 +1,116 @@
+<!-- activity_pedido_venda.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#DEF5E5">
+
+    <Spinner
+        android:id="@+id/spinnerCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selecione o Cliente" />
+
+    <Spinner
+        android:id="@+id/spinnerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selecione o Item" />
+
+    <EditText
+        android:id="@+id/etQuantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade"
+        android:inputType="number"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvValorUnitario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Unitário: " />
+
+    <TextView
+        android:id="@+id/tvUnidadeMedida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unidade de Medida: " />
+
+    <Button
+        android:id="@+id/btnAdicionarItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Item ao Pedido"
+        android:backgroundTint="#9ED5C5"
+        android:textColor="#425F57"
+        android:textStyle="bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewItensPedido"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Spinner
+        android:id="@+id/spinnerCondicaoPagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Condição de Pagamento"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etQuantidadeParcelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade de Parcelas"
+        android:inputType="number"
+        android:visibility="gone"
+        android:layout_marginTop="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewParcelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerEnderecoEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Endereço de Entrega"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvValorFrete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor do Frete: R$0.00"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvValorTotalComDescontoAcrescimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Total (com desconto/acréscimo): R$0.00"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnConcluirPedido"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#A8E890"
+        android:textColor="#425F57"
+        android:textStyle="bold"
+        android:text="Concluir Pedido"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

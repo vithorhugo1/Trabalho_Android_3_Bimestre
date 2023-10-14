@@ -1,0 +1,85 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEF5E5">
+
+
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Força Vendas App"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:background="#8EC3B0"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCadastrarItem"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Item"
+        android:backgroundTint="#9ED5C5"
+        android:textColor="#425F57"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarCliente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <Button
+        android:id="@+id/btnCadastrarCliente"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Cliente"
+        android:backgroundTint="#9ED5C5"
+        android:textColor="#425F57"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrarItem"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarEndereco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnCadastrarEndereco"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Endereço"
+        android:backgroundTint="#9ED5C5"
+        android:textColor="#425F57"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrarCliente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnRealizarPedido" />
+
+    <Button
+        android:id="@+id/btnRealizarPedido"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Realizar Pedido"
+        android:backgroundTint="#A8E890"
+        android:textColor="#425F57"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrarEndereco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="80dp"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
